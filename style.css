@@ -422,6 +422,42 @@ body {
   color: var(--pink-300);
 }
 
+/* Skills & Projects on light background */
+.section-light .sk-item {
+  border-bottom-color: rgba(143, 47, 82, 0.12);
+}
+.section-light .sk-item:first-of-type {
+  border-top-color: rgba(143, 47, 82, 0.12);
+}
+.section-light .proj-card {
+  background: rgba(143, 47, 82, 0.04);
+  border-color: rgba(143, 47, 82, 0.15);
+}
+.section-light .proj-card h4 {
+  color: var(--pink-600);
+}
+.section-light .proj-card p {
+  color: var(--mid);
+}
+.section-light .proj-tags span {
+  border-color: rgba(143, 47, 82, 0.25);
+  color: var(--pink-500);
+}
+
+/* Education on dark background */
+.edu-card--dark {
+  border-bottom-color: rgba(232, 143, 172, 0.15);
+}
+.edu-card--dark:first-child {
+  border-top-color: rgba(232, 143, 172, 0.15);
+}
+.edu-card--dark h3 {
+  color: var(--pink-200);
+}
+.edu-card--dark p {
+  color: var(--muted);
+}
+
 .proj-card--comp {
   border-color: rgba(100, 180, 232, 0.2);
   background: rgba(100, 180, 232, 0.04);
