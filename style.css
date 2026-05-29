@@ -422,6 +422,36 @@ body {
   color: var(--pink-300);
 }
 
+.proj-card--comp {
+  border-color: rgba(100, 180, 232, 0.2);
+  background: rgba(100, 180, 232, 0.04);
+}
+
+.proj-tag--comp {
+  color: #64b4e8;
+}
+
+.proj-tags--comp span {
+  border-color: rgba(100, 180, 232, 0.25);
+  color: #90caf9;
+}
+
+.proj-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: #64b4e8;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(100, 180, 232, 0.35);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.proj-link:hover {
+  color: #90caf9;
+  border-color: rgba(144, 202, 249, 0.6);
+}
+
 /* ===== FOOTER ===== */
 footer {
   background: var(--bg-dark);
