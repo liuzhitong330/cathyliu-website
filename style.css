@@ -339,40 +339,27 @@ body {
   margin-top: 4px;
 }
 
-/* ===== SKILLS & PROJECTS ===== */
-.sp-grid {
+/* ===== PROJECTS ===== */
+.proj-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 72px;
+  gap: 16px;
 }
 
-.subhead {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+.proj-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.proj-link--paper {
   color: var(--pink-400);
-  margin-bottom: 24px;
+  border-bottom-color: rgba(212, 100, 138, 0.35);
 }
-
-.sk-item {
-  padding: 16px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-.sk-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.05); }
-
-.sk-label {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
+.proj-link--paper:hover {
   color: var(--pink-300);
-  margin-bottom: 4px;
-}
-
-.sk-val {
-  font-size: 0.82rem;
-  color: var(--muted);
-  line-height: 1.7;
+  border-bottom-color: rgba(232, 143, 172, 0.6);
 }
 
 .proj-card {
@@ -422,13 +409,7 @@ body {
   color: var(--pink-300);
 }
 
-/* Skills & Projects on light background */
-.section-light .sk-item {
-  border-bottom-color: rgba(143, 47, 82, 0.12);
-}
-.section-light .sk-item:first-of-type {
-  border-top-color: rgba(143, 47, 82, 0.12);
-}
+/* Projects on light background */
 .section-light .proj-card {
   background: rgba(143, 47, 82, 0.04);
   border-color: rgba(143, 47, 82, 0.15);
@@ -474,7 +455,6 @@ body {
 
 .proj-link {
   display: inline-block;
-  margin-top: 14px;
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   color: #64b4e8;
@@ -557,10 +537,9 @@ footer {
     gap: 20px;
   }
 
-  /* Skills & Projects: stack */
-  .sp-grid {
+  /* Projects: stack */
+  .proj-list {
     grid-template-columns: 1fr;
-    gap: 48px;
   }
 }
 
