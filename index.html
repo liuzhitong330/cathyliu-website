@@ -4,237 +4,188 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cathy Liu</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Cathy Liu — Master of Biotechnology candidate combining wet-lab training with computational biology and AI-driven discovery." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cathy Liu" />
+  <meta property="og:description" content="Master of Biotechnology candidate combining wet-lab training with computational biology and AI-driven discovery." />
+  <meta property="og:image" content="https://liuzhitong330.github.io/cathyliu-website/1756187128876.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://liuzhitong330.github.io/cathyliu-website/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="1756187128876.jpeg" type="image/jpeg" />
+
+  <!-- Google Fonts: Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div class="page">
 
-  <!-- ===== FIXED NAV ===== -->
-  <nav class="topnav">
-    <a href="#hero" class="nav-logo">Cathy Liu</a>
-    <div class="nav-links">
-      <a href="#about">Summary</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-text">
+      <h1>Cathy Liu</h1>
+      <p>
+        Master of Biotechnology candidate combining wet-lab training with computational biology
+        and AI-driven discovery. Recently developed an end-to-end pipeline for epilepsy
+        neurostimulation that pairs LLM-based literature mining with brain digital-twin simulation
+        (<a href="https://www.thevirtualbrain.org/" target="_blank" rel="noopener">The Virtual Brain</a>)
+        and minimax optimisation, tuning stimulation settings to protect the worst-responding patient
+        rather than the average. Earlier, co-developed a PDAC target discovery workflow integrating
+        single-cell RNA-seq, regulatory network inference, and
+        <a href="https://depmap.org/" target="_blank" rel="noopener">DepMap</a> benchmarking.
+        Proficient in Python and R, with hands-on experience in GMP vaccine R&amp;D and a track
+        record of explaining technical work clearly to both scientific and non-scientific audiences.
+        My interests sit at the intersection of biology and AI-driven discovery — from disease
+        modelling to therapeutic target identification.
+      </p>
+      <p class="header-links">
+        <a href="mailto:zhitongl3@student.unimelb.edu.au">Email</a> /
+        <a href="autoCV.pdf" target="_blank" rel="noopener">CV</a> /
+        <a href="https://linkedin.com/in/cathy-liu-6a2151353" target="_blank" rel="noopener">LinkedIn</a> /
+        <a href="https://github.com/liuzhitong330" target="_blank" rel="noopener">GitHub</a>
+      </p>
     </div>
-  </nav>
+    <div class="header-photo">
+      <img src="1756187128876.jpeg" alt="Cathy Liu" />
+    </div>
+  </header>
 
-  <!-- ===== HERO ===== -->
-  <section id="hero" class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="eyebrow">Portfolio · 2026</p>
-        <h1>Cathy<br>Liu</h1>
-        <p class="hero-role">Master of Biotechnology Candidate<br>Computational Biology &amp; Drug Discovery</p>
-        <div class="hero-contacts">
-          <a href="mailto:zhitongl3@student.unimelb.edu.au">zhitongl3@student.unimelb.edu.au</a>
-          <a href="tel:+61478135970">+61 478 135 970</a>
-          <a href="https://linkedin.com/in/cathy-liu-6a2151353" target="_blank">LinkedIn ↗</a>
-        </div>
-        <a href="#about" class="cta-btn">View My Work ↓</a>
-      </div>
-      <div class="hero-photo">
-        <img src="1756187128876.jpeg" alt="Cathy Liu" />
-      </div>
-    </div>
-    <div class="hero-deco">
-      <div class="deco-circle c1"></div>
-      <div class="deco-circle c2"></div>
-    </div>
-  </section>
+  <!-- ===== PROJECTS ===== -->
+  <section>
+    <h2>Projects</h2>
 
-  <!-- ===== SUMMARY ===== -->
-  <section id="about" class="section section-light">
-    <div class="container">
-      <div class="section-label">
-        <span class="num">01</span>
-        <h2>Summary</h2>
+    <!-- Featured -->
+    <div class="pub-row highlight">
+      <div class="pub-img">
+        <!-- TODO: replace div below with <img src="thumb_neurostim.png" alt="…"> (screenshot of https://liuzhitong330.github.io/tvb-llm-robust-neurostim/) -->
+        <div class="pub-img-placeholder"></div>
       </div>
-      <div class="about-body">
-        <p class="lead">Master of Biotechnology candidate combining wet-lab training with computational biology and AI-driven discovery.</p>
-        <p>Recently developed an end-to-end pipeline for epilepsy neurostimulation that pairs LLM-based literature mining with brain digital-twin simulation (The Virtual Brain) and minimax optimisation, tuning stimulation settings to protect the worst-responding patient rather than the average. Earlier, co-developed a PDAC target discovery workflow integrating single-cell RNA-seq, regulatory network inference, and DepMap benchmarking.</p>
-        <p>Proficient in Python and R, with earlier hands-on experience in GMP vaccine R&amp;D and a track record of explaining technical work clearly to both scientific and non-scientific audiences. My interests sit at the intersection of biology and AI-driven discovery, from disease modelling to therapeutic target identification.</p>
+      <div class="pub-body">
+        <p class="pub-title">LLM-Guided Minimax Optimisation for Epilepsy Neurostimulation</p>
+        <p class="pub-desc">End-to-end pipeline combining Claude API literature mining, The Virtual Brain (TVB) digital-twin simulation, and minimax optimisation to identify robust neurostimulation settings that protect the worst-responding patient.</p>
+        <p class="pub-tags">LLM / Claude API &nbsp;·&nbsp; Brain Simulation &nbsp;·&nbsp; Minimax Optimisation &nbsp;·&nbsp; Digital Twins</p>
+        <p class="pub-links">
+          <a href="https://liuzhitong330.github.io/tvb-llm-robust-neurostim/" target="_blank" rel="noopener">Project Page</a> /
+          <a href="https://github.com/liuzhitong330/tvb-llm-robust-neurostim/raw/main/paper/tvb_llm_robust_neurostimulation.pdf" target="_blank" rel="noopener">Paper</a>
+        </p>
       </div>
     </div>
+
+    <!-- Featured -->
+    <div class="pub-row highlight">
+      <div class="pub-img">
+        <!-- TODO: replace div below with <img src="thumb_pdac.png" alt="…"> (screenshot of https://liuzhitong330.github.io/esi1-src-blog/) -->
+        <div class="pub-img-placeholder"></div>
+      </div>
+      <div class="pub-body">
+        <p class="pub-title">From Differential Expression to Virtual Knockouts — PDAC Target Discovery</p>
+        <p class="pub-desc">Automated target-discovery pipeline for pancreatic ductal adenocarcinoma integrating scRNA-seq differential expression, LLM-assisted regulatory network construction, Boolean knockout simulation, AlphaFold 3 structural prediction, and DepMap benchmarking to prioritise therapeutic candidates.</p>
+        <p class="pub-tags">scRNA-seq &nbsp;·&nbsp; LLM / Claude API &nbsp;·&nbsp; Boolean Modelling &nbsp;·&nbsp; AlphaFold 3</p>
+        <p class="pub-links">
+          <a href="https://liuzhitong330.github.io/esi1-src-blog/" target="_blank" rel="noopener">Project Page</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-img">
+        <!-- TODO: replace div below with <img src="thumb_malnutrition.png" alt="…"> -->
+        <div class="pub-img-placeholder"></div>
+      </div>
+      <div class="pub-body">
+        <p class="pub-title">Developing Strategies to Treat Childhood Malnutrition</p>
+        <p class="pub-desc">Evaluated biotechnology strategies integrating mechanistic rationale, scientific evidence, and development considerations into structured briefing summaries.</p>
+        <p class="pub-tags">Industry Project &nbsp;·&nbsp; Biotechnology &nbsp;·&nbsp; Technical Writing &nbsp;·&nbsp; Stakeholder Comms</p>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-img">
+        <!-- TODO: replace div below with <img src="thumb_vaccine.png" alt="…"> -->
+        <div class="pub-img-placeholder"></div>
+      </div>
+      <div class="pub-body">
+        <p class="pub-title">ACYW135 Quadrivalent Meningococcal Polysaccharide Vaccine</p>
+        <p class="pub-desc">End-to-end vaccine R&amp;D spanning molecular characterisation, QC method development, formulation optimisation, and preclinical immunogenicity evaluation.</p>
+        <p class="pub-tags">R&amp;D Project &nbsp;·&nbsp; HPLC/SEC &nbsp;·&nbsp; Immunogenicity &nbsp;·&nbsp; GMP Compliance</p>
+      </div>
+    </div>
+
   </section>
 
   <!-- ===== EDUCATION ===== -->
-  <section id="education" class="section section-dark">
-    <div class="container">
-      <div class="section-label">
-        <span class="num">02</span>
-        <h2>Education</h2>
-      </div>
-      <div class="edu-list">
+  <section>
+    <h2>Education</h2>
 
-        <div class="edu-card edu-card--dark">
-          <span class="edu-year">2024 – Jul 2026</span>
-          <div>
-            <h3>The University of Melbourne</h3>
-            <p>Master of Biotechnology</p>
-            <p class="grade">Grades: 74/100</p>
-          </div>
-        </div>
-
-        <div class="edu-card edu-card--dark">
-          <span class="edu-year">2020 – 2024</span>
-          <div>
-            <h3>Guangdong Medical University</h3>
-            <p>Bachelor of Science · Pharmaceutical Science</p>
-            <p class="grade">Grades: 85/100</p>
-          </div>
-        </div>
-
-      </div>
+    <div class="entry">
+      <p class="entry-title">The University of Melbourne</p>
+      <p class="entry-meta">Master of Biotechnology &nbsp;·&nbsp; 2024 – Jul 2026 &nbsp;·&nbsp; Grades: 74/100</p>
     </div>
-  </section>
 
-  <!-- ===== PROJECTS & SKILLS ===== -->
-  <section id="projects" class="section section-light">
-    <div class="container">
-      <div class="section-label">
-        <span class="num">03</span>
-        <h2>Projects</h2>
-      </div>
-
-      <div class="proj-list">
-
-          <div class="proj-card proj-card--comp">
-            <span class="proj-tag proj-tag--comp">Computational Research</span>
-            <h4>LLM-Guided Minimax Optimisation for Epilepsy Neurostimulation</h4>
-            <p>End-to-end pipeline combining Claude API literature mining, The Virtual Brain (TVB) digital-twin simulation, and minimax optimisation to identify robust neurostimulation settings that protect the worst-responding patient.</p>
-            <div class="proj-tags proj-tags--comp">
-              <span>LLM / Claude API</span><span>Brain Simulation</span><span>Minimax Optimisation</span><span>Digital Twins</span>
-            </div>
-            <div class="proj-links">
-              <a href="https://liuzhitong330.github.io/tvb-llm-robust-neurostim/" target="_blank" class="proj-link">View Project ↗</a>
-              <a href="https://github.com/liuzhitong330/tvb-llm-robust-neurostim/raw/main/paper/tvb_llm_robust_neurostimulation.pdf" target="_blank" class="proj-link proj-link--paper">View Paper ↗</a>
-            </div>
-          </div>
-
-          <div class="proj-card proj-card--comp">
-            <span class="proj-tag proj-tag--comp">Computational Research</span>
-            <h4>From Differential Expression to Virtual Knockouts — PDAC Target Discovery</h4>
-            <p>Automated target-discovery pipeline for pancreatic ductal adenocarcinoma integrating scRNA-seq differential expression, LLM-assisted regulatory network construction, Boolean knockout simulation, AlphaFold 3 structural prediction, and DepMap benchmarking to prioritise therapeutic candidates.</p>
-            <div class="proj-tags proj-tags--comp">
-              <span>scRNA-seq</span><span>LLM / Claude API</span><span>Boolean Modelling</span><span>AlphaFold 3</span>
-            </div>
-            <a href="https://liuzhitong330.github.io/esi1-src-blog/" target="_blank" class="proj-link">View Project ↗</a>
-          </div>
-
-          <div class="proj-card">
-            <span class="proj-tag">Industry Project</span>
-            <h4>Developing Strategies to Treat Childhood Malnutrition</h4>
-            <p>Evaluated biotechnology strategies integrating mechanistic rationale, scientific evidence, and development considerations into structured briefing summaries.</p>
-            <div class="proj-tags">
-              <span>Biotechnology</span><span>Technical Writing</span><span>Stakeholder Comms</span>
-            </div>
-          </div>
-
-          <div class="proj-card">
-            <span class="proj-tag">R&amp;D Project</span>
-            <h4>ACYW135 Quadrivalent Meningococcal Polysaccharide Vaccine</h4>
-            <p>End-to-end vaccine R&amp;D spanning molecular characterisation, QC method development, formulation optimisation, and preclinical immunogenicity evaluation.</p>
-            <div class="proj-tags">
-              <span>HPLC/SEC</span><span>Immunogenicity</span><span>GMP Compliance</span>
-            </div>
-          </div>
-
-      </div>
+    <div class="entry">
+      <p class="entry-title">Guangdong Medical University</p>
+      <p class="entry-meta">Bachelor of Science · Pharmaceutical Science &nbsp;·&nbsp; 2020 – 2024 &nbsp;·&nbsp; Grades: 85/100</p>
     </div>
+
   </section>
 
   <!-- ===== EXPERIENCE ===== -->
-  <section id="experience" class="section section-dark">
-    <div class="container">
-      <div class="section-label">
-        <span class="num">04</span>
-        <h2>Work Experience</h2>
-      </div>
-      <div class="timeline">
+  <section>
+    <h2>Experience</h2>
 
-        <div class="tl-item">
-          <div class="tl-left">
-            <span class="tl-date">Feb 2025 – Dec 2025</span>
-            <span class="tl-co">Murdoch Children's Research Institute (MCRI)</span>
-          </div>
-          <div class="tl-right">
-            <h3>Research Analyst</h3>
-            <ul>
-              <li>Led Biotech Interventions workstream in an industry-partnered project on childhood malnutrition.</li>
-              <li>Synthesised biological readouts (growth indices, inflammatory markers, microbial signals) into decision-oriented technical summaries.</li>
-              <li>Delivered technical briefs to mixed scientific and non-scientific stakeholders.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-left">
-            <span class="tl-date">Jul 2023 – Jun 2024</span>
-            <span class="tl-co">Beijing Institute of Biological Products Co., Ltd.</span>
-          </div>
-          <div class="tl-right">
-            <h3>Research Assistant</h3>
-            <ul>
-              <li>Contributed to early-stage R&amp;D of ACYW135 quadrivalent meningococcal polysaccharide vaccine.</li>
-              <li>Developed and validated rocket electrophoresis as a QC method for polysaccharide content quantification.</li>
-              <li>Characterised polysaccharide molecular weight via HPLC/SEC; maintained GMP/SOP-compliant documentation.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-left">
-            <span class="tl-date">May 2023 – Aug 2023</span>
-            <span class="tl-co">Guangdong Women and Children's Hospital</span>
-          </div>
-          <div class="tl-right">
-            <h3>Pharmacy Assistant</h3>
-            <ul>
-              <li>Rotated across inpatient pharmacy, IV room, outpatient pharmacy, and drug warehouse.</li>
-              <li>Conducted prescription review, medication verification, and patient counselling.</li>
-              <li>Therapeutic Drug Monitoring Lab: processed blood samples for pharmacokinetic monitoring.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-left">
-            <span class="tl-date">Mar 2022 – Apr 2023</span>
-            <span class="tl-co">Shanxi Zhendong Pharmaceutical Co., Ltd.</span>
-          </div>
-          <div class="tl-right">
-            <h3>Research Assistant</h3>
-            <ul>
-              <li>Managed stakeholder relationships with health providers and hospital pharmacies.</li>
-              <li>Coordinated supply continuity and identified implementation bottlenecks.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
+    <div class="entry">
+      <p class="entry-title">Research Analyst &nbsp;·&nbsp; <span class="entry-org">Murdoch Children's Research Institute (MCRI)</span></p>
+      <p class="entry-meta">Feb 2025 – Dec 2025</p>
+      <ul>
+        <li>Led Biotech Interventions workstream in an industry-partnered project on childhood malnutrition.</li>
+        <li>Synthesised biological readouts (growth indices, inflammatory markers, microbial signals) into decision-oriented technical summaries.</li>
+        <li>Delivered technical briefs to mixed scientific and non-scientific stakeholders.</li>
+      </ul>
     </div>
+
+    <div class="entry">
+      <p class="entry-title">Research Assistant &nbsp;·&nbsp; <span class="entry-org">Beijing Institute of Biological Products Co., Ltd.</span></p>
+      <p class="entry-meta">Jul 2023 – Jun 2024</p>
+      <ul>
+        <li>Contributed to early-stage R&amp;D of ACYW135 quadrivalent meningococcal polysaccharide vaccine.</li>
+        <li>Developed and validated rocket electrophoresis as a QC method for polysaccharide content quantification.</li>
+        <li>Characterised polysaccharide molecular weight via HPLC/SEC; maintained GMP/SOP-compliant documentation.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <p class="entry-title">Pharmacy Assistant &nbsp;·&nbsp; <span class="entry-org">Guangdong Women and Children's Hospital</span></p>
+      <p class="entry-meta">May 2023 – Aug 2023</p>
+      <ul>
+        <li>Rotated across inpatient pharmacy, IV room, outpatient pharmacy, and drug warehouse.</li>
+        <li>Conducted prescription review, medication verification, and patient counselling.</li>
+        <li>Therapeutic Drug Monitoring Lab: processed blood samples for pharmacokinetic monitoring.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <p class="entry-title">Research Assistant &nbsp;·&nbsp; <span class="entry-org">Shanxi Zhendong Pharmaceutical Co., Ltd.</span></p>
+      <p class="entry-meta">Mar 2022 – Apr 2023</p>
+      <ul>
+        <li>Managed stakeholder relationships with health providers and hospital pharmacies.</li>
+        <li>Coordinated supply continuity and identified implementation bottlenecks.</li>
+      </ul>
+    </div>
+
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
     <p>© 2026 Cathy Liu</p>
   </footer>
 
-  <script>
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(a => a.classList.remove('active'));
-          const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
-          if (active) active.classList.add('active');
-        }
-      });
-    }, { threshold: 0.4 });
-    sections.forEach(s => observer.observe(s));
-  </script>
-
+</div>
 </body>
 </html>
